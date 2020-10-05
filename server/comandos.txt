@@ -1,0 +1,12 @@
+#criar um arquivo de migrate
+npx sequelize migration:create --name=<nome>
+
+#Comando que cria o banco de dados:
+npx sequelize db:create
+
+#Comando que executa as tabelas, conforme os migrates
+npx sequelize db:migrate
+
+defaultValue: Sequelize.fn('now')
+
+Sequelize.NOW
